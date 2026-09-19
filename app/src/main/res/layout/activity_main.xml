@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,7 +17,7 @@
         android:layout_height="96dp"
         android:layout_marginBottom="24dp"
         android:src="@android:drawable/ic_menu_info_details"
-        android:tint="#00E676"
+        app:tint="#00E676"
         android:contentDescription="Radio Info Icon" />
 
     <!-- Elegant Typography -->
@@ -90,7 +91,7 @@
         android:paddingTop="12dp"
         android:paddingBottom="12dp"
         android:textColor="#121212"
-        android:backgroundTint="#00E676"
+        app:backgroundTint="#00E676"
         android:tag="launch_button" />
 
 </LinearLayout>
