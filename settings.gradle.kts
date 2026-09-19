@@ -22,6 +22,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "RadioInfo Shortcut"
+rootProject.name = "DravixIDE"
 
 include(":app")

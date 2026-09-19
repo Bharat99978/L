@@ -6,29 +6,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp"
-    android:background="#121212"
+    android:padding="28dp"
+    android:background="#0D0D11"
     tools:context="com.network.nr.MainActivity">
 
-    <!-- Premium Icon Area -->
-    <ImageView
-        android:id="@+id/icon_image"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:layout_marginBottom="24dp"
-        android:src="@android:drawable/ic_menu_info_details"
-        app:tint="#00E676"
-        android:contentDescription="Radio Info Icon" />
-
-    <!-- Elegant Typography -->
+    <!-- Title and Branding -->
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Radio Info"
+        android:text="DravixIDE"
         android:textColor="#FFFFFF"
-        android:textSize="28sp"
+        android:textSize="32sp"
         android:textStyle="bold"
+        android:letterSpacing="0.03"
         android:layout_marginBottom="8dp"
         android:gravity="center" />
 
@@ -36,36 +27,36 @@
         android:id="@+id/subtitle_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="System Signal &amp; Network Configuration Utility"
-        android:textColor="#B0BEC5"
-        android:textSize="14sp"
-        android:layout_marginBottom="32dp"
+        android:text="System Signal &amp; RadioInfo Utility"
+        android:textColor="#C084FC"
+        android:textSize="15sp"
+        android:layout_marginBottom="36dp"
         android:gravity="center" />
 
-    <!-- Help/Information Card style layout -->
+    <!-- Information Card -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#1E1E1E"
-        android:padding="20dp"
-        android:layout_marginBottom="32dp"
-        android:elevation="4dp">
+        android:background="#181820"
+        android:padding="22dp"
+        android:layout_marginBottom="36dp"
+        android:elevation="6dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Shortcut Action"
-            android:textColor="#00E676"
+            android:textColor="#C084FC"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This application is a shortcut to open the hidden Android RadioInfo configuration screen (com.android.phone.settings.RadioInfo) to manage advanced cellular settings."
-            android:textColor="#ECEFF1"
+            android:text="Direct shortcut to launch the Android RadioInfo configuration screen (com.android.phone.settings.RadioInfo) to manage mobile network settings."
+            android:textColor="#E2E8F0"
             android:textSize="14sp"
             android:lineSpacingMultiplier="1.2"
             android:layout_marginBottom="12dp" />
@@ -73,25 +64,26 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Note: On some carrier-customized devices or specific manufacturer versions, access to this menu may be restricted by the operating system."
-            android:textColor="#CFD8DC"
+            android:text="Note: Access may be restricted by device OEM firmware or carrier policies."
+            android:textColor="#94A3B8"
             android:textSize="12sp"
             android:textStyle="italic" />
     </LinearLayout>
 
-    <!-- Interactive Launch Button (with testTag in mind) -->
+    <!-- Launch Button -->
     <Button
         android:id="@+id/launch_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open Radio Info"
         android:textSize="16sp"
-        android:paddingStart="32dp"
-        android:paddingEnd="32dp"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:textColor="#121212"
-        app:backgroundTint="#00E676"
+        android:textStyle="bold"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#9333EA"
         android:tag="launch_button" />
 
 </LinearLayout>
